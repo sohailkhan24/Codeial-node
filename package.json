@@ -1,0 +1,26 @@
+{
+  "name": "codeial-node",
+  "version": "1.0.0",
+  "description": "Social Media website",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sohailkhan24/Codeial-node.git"
+  },
+  "keywords": [
+    "app"
+  ],
+  "author": "Sohail khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sohailkhan24/Codeial-node/issues"
+  },
+  "homepage": "https://github.com/sohailkhan24/Codeial-node#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
