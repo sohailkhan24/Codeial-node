@@ -14,7 +14,6 @@ module.exports.profile = function (req, res) {
     return res.redirect("/users/sign-in");
   }
 };
-Hello;
 
 module.exports.signUp = function (req, res) {
   return res.render("user_sign_up", {
