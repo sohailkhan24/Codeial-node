@@ -3,3 +3,7 @@ module.exports.post = function (req, res) {
     title: "Posts",
   });
 };
+
+module.exports.createPost = function (req, res) {
+  //Todo
+};
