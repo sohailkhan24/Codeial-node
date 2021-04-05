@@ -9,6 +9,7 @@ const session = require("express-session");
 
 const passport = require("passport");
 const passportLocal = require("./config/passport-local-strategy");
+const passportJWT = require("./config/passport-jwt-strategy");
 const MongoStore = require("connect-mongo")(session);
 const sassMiddleware = require("node-sass-middleware");
 const flash = require("connect-flash");
@@ -26,6 +27,8 @@ app.use(
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static("./assets"));
+//make the uploads path avaiable to browser
+app.use("/uploads", express.static(__dirname + "/uploads"));
 app.use(expressLayouts);
 //extract style and scripts from sub pages into layouts
 
