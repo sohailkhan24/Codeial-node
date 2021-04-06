@@ -5,8 +5,8 @@ const path = require("path");
 let transporter = nodemailer.createTransport({
   service: "gmail",
   host: "smtp.gmail.com",
-  port: 587,
-  secure: false,
+  port: 465,
+  secure: true,
   auth: {
     user: "sohailkhan2709@gmail.com",
     pass: "zcbm12342@",
@@ -20,7 +20,7 @@ let renderTemplate = (data, relativePath) => {
     data,
     function (err, template) {
       if (err) {
-        console.log("error in rendering template");
+        console.log("error in rendering template", err);
         return;
       }
 
