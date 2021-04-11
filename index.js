@@ -1,11 +1,13 @@
 const express = require("express");
 const logger = require("morgan");
+
 const env = require("./config/environment");
 const cookieParser = require("cookie-parser");
 const app = express();
 const port = 8000;
 const expressLayouts = require("express-ejs-layouts");
 const db = require("./config/mongoose");
+require("./config/view-helpers")(app);
 // used for session cookie
 const session = require("express-session");
 const passport = require("passport");
