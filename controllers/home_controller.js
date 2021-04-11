@@ -28,6 +28,7 @@ module.exports.home = async function (req, res) {
   }
 };
 =======
+
 const Post = require('../models/post');
 const User = require('../models/user');
 
