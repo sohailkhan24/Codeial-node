@@ -22,8 +22,8 @@ const development = {
     port: 587,
     secure: false,
     auth: {
-      user: "alchemy.cn18",
-      pass: "codingninjas",
+      user: "sohailkhan@gmail.com",
+      pass: "**********",
     },
   },
   google_client_id:
@@ -62,7 +62,7 @@ const production = {
   // }
 };
 
-module.exports =
-  eval(process.env.CODEIAL_ENVIRONMENT) == undefined
-    ? development
-    : eval(process.env.CODEIAL_ENVIRONMENT);
+module.exports = development;
+// eval(process.env.CODEIAL_ENVIRONMENT) == undefined
+//   ? development
+//   : eval(process.env.CODEIAL_ENVIRONMENT);
